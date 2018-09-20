@@ -12,6 +12,14 @@ public class MatematicaTest {
 	}
 	
 	@Test
+	public void testaFatorialZero2() {
+		Matematica matematica = new Matematica();
+		int resposta = matematica.fatorial(0);
+
+		Assert.assertEquals(resposta, 2);
+	}
+	
+	@Test
 	public void testaFatorialMenorZero() {
 		Matematica matematica = new Matematica();
 		int resposta = matematica.fatorial(-5);
